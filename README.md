@@ -2,9 +2,9 @@
 Collection of different tools which ease the testing
 
 There are following tools for now: 
-* ID, Mobile numbers, email, document number generator
-* Statement XML Generator
-* PDF checker
+* # ID, Mobile numbers, email, document number generator
+* # Statement XML Generator
+* # PDF checker
 
 
 # DO NOT FORGET TO INSTALL NECESSARY LIBRARIES BEFORE USING TOOLS
