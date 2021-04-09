@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Generate Staff
+	</title>
+	<style > 
+		body {background-color: #ADD8E6;}
+        .centertext{  text-align: center;}
+	    .button{
+	    	height: 100px; 
+            width: 150px; 
+	    }
+
+	</style>
+</head>
+<body>
+
+	<header>
+      <h1 class="centertext">This Tool is for generating ID cards, Mobile number and emails</h1>
+    </header>
+
+    <nav>
+    	<h2 class="centertext"> Choose Country</h2>
+      	<div  class="centertext">
+		   	<ul class="centertext">
+		   		<button id="EE" class="button">EE</button>
+		   		<button id="LV" class="button">LV</button>
+		   		<button id="LT" class="button">LT</button>
+		   		<button id="PL" class="button">PL</button>
+
+		    </ul>
+     	</div>
+
+        <div  class="centertext">
+            <ul class="centertext">
+                <h2 class="centertext"> Choose the country IF YOU NEED to modify gender, birth date to generate ID code</h2>
+
+             <form  id="form" ><!--action="calculate.js"-->
+              <label for="birthday">Birthday:</label>
+              <input type="date" id="birthday" name="birthday" required>
+              
+              <p>Please select your gender:</p>
+              <input type="radio" id="male" name="gender" value="male" required>
+              <label for="male">Male</label><br>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label><br>
+             
+
+              <br>  
+
+              <p>Please select test country:</p>
+              <input type="radio" id="Estonia" name="country" value="EE" required>
+              <label for="Estonia">EE</label><br>
+              <input type="radio" id="Poland" name="country" value="PL">
+              <label for="Poland">PL</label><br>  
+              <br>
+              <input id="submit" type="submit" value="Submit">
+             </form>
+
+            </ul>
+        </div>
+     	<div class="result">
+     		<h2 id="result" class="centertext">RESULT</h2>
+     		<h2 id="phone" class="centertext"></h2>
+     		<h2 id="email" class="centertext"></h2>
+     		<h2 id="document" class="centertext"></h2>
+     		<h2 id="iban" class="centertext"></h2>
+
+     	</div>
+
+
+     </nav>
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script> 
+    <script src="calculate.js "> </script>
+
+</body>
+</html>
